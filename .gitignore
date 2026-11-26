@@ -1,0 +1,17 @@
+# Entorno virtual y caché de Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Variables de entorno locales
+.env
+
+# Datos generados por el pipeline (se regeneran con python main.py)
+data/silver/*.csv
+data/gold/*.csv
+data/gold/*.db
+logs/*.log
+logs/*.json
+data/bronze/gtfs_mio_source.zip

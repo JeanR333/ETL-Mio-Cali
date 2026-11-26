@@ -1,0 +1,181 @@
+{
+  "proyecto": "ETL MIO Cali",
+  "run_id": "20261118_005053",
+  "KPI1_numero_rutas": 97,
+  "KPI1_rutas_por_tipo_servicio": {
+    "Alimentadora": 56,
+    "Pretroncal": 28,
+    "Expresa": 7,
+    "Troncal": 6
+  },
+  "KPI2_numero_paradas_integradas": 2543,
+  "KPI2_paradas_por_fuente": {
+    "ambas": 1612,
+    "solo_api": 495,
+    "solo_gtfs": 436
+  },
+  "KPI3_cobertura_por_zona": {
+    "Fuera de comunas (rural)": {
+      "paradas": 263,
+      "rutas": 20
+    },
+    "Comuna 17": {
+      "paradas": 239,
+      "rutas": 34
+    },
+    "Comuna 02": {
+      "paradas": 206,
+      "rutas": 27
+    },
+    "Comuna 19": {
+      "paradas": 205,
+      "rutas": 26
+    },
+    "Comuna 21": {
+      "paradas": 145,
+      "rutas": 28
+    },
+    "Comuna 13": {
+      "paradas": 120,
+      "rutas": 22
+    },
+    "Comuna 18": {
+      "paradas": 116,
+      "rutas": 17
+    },
+    "Comuna 06": {
+      "paradas": 109,
+      "rutas": 15
+    },
+    "Comuna 03": {
+      "paradas": 108,
+      "rutas": 28
+    },
+    "Comuna 14": {
+      "paradas": 108,
+      "rutas": 18
+    },
+    "Comuna 16": {
+      "paradas": 104,
+      "rutas": 10
+    },
+    "Comuna 05": {
+      "paradas": 102,
+      "rutas": 15
+    },
+    "Comuna 08": {
+      "paradas": 97,
+      "rutas": 18
+    },
+    "Comuna 11": {
+      "paradas": 95,
+      "rutas": 17
+    },
+    "Comuna 15": {
+      "paradas": 85,
+      "rutas": 16
+    },
+    "Comuna 04": {
+      "paradas": 83,
+      "rutas": 15
+    },
+    "Comuna 07": {
+      "paradas": 72,
+      "rutas": 18
+    },
+    "Comuna 10": {
+      "paradas": 66,
+      "rutas": 8
+    },
+    "Comuna 22": {
+      "paradas": 65,
+      "rutas": 20
+    },
+    "Comuna 12": {
+      "paradas": 56,
+      "rutas": 14
+    },
+    "Comuna 09": {
+      "paradas": 44,
+      "rutas": 22
+    },
+    "Comuna 20": {
+      "paradas": 31,
+      "rutas": 5
+    },
+    "Comuna 01": {
+      "paradas": 24,
+      "rutas": 3
+    }
+  },
+  "KPI1_rutas_en_api_2025": 63,
+  "KPI4_vigencia": "Programación GTFS 2017-2021 (la API 2025 no trae horarios)",
+  "KPI4_viajes_programados_dia_habil": 20112,
+  "KPI4_viajes_rutas_que_siguen_en_api_2025": 13655,
+  "KPI4_viajes_rutas_sin_correspondencia_api_2025": 6457,
+  "KPI4_horas_pico_habil": {
+    "06:00": 1457,
+    "07:00": 1418,
+    "17:00": 1366
+  },
+  "KPI4_rutas_mayor_frecuencia": {
+    "A47": 585,
+    "T47B": 488,
+    "A14A": 448,
+    "E21": 442,
+    "T40": 391
+  },
+  "KPI5_tiempo_recorrido_min": {
+    "simple_por_ruta_min": 28.7,
+    "ponderada_por_viajes_min": 29.8,
+    "mediana_min": 24.5,
+    "viajes_considerados": 20112
+  },
+  "KPI5_tiempo_promedio_recorrido_min": 28.7,
+  "KPI6_accesibilidad": {
+    "radio_principal_m": 500,
+    "pct_area_cubierta_radio_principal": 95.3,
+    "distancia_media_m": 188.0,
+    "distancia_p90_m": 346.0,
+    "pct_area_por_radio_m": {
+      "200": 69.0,
+      "300": 86.3,
+      "500": 95.3
+    },
+    "poblacion_total": 2192976,
+    "personas_cubiertas_radio_principal": 2140127,
+    "personas_sin_cobertura_radio_principal": 52849
+  },
+  "KPI7_conciliacion": {
+    "paradas_sin_correspondencia": {
+      "solo en API 2025 (nueva)": 495,
+      "solo en GTFS 2017-2021": 436,
+      "reubicada más de 200 m": 14
+    },
+    "rutas_por_estado": {
+      "en ambas fuentes": 63,
+      "solo GTFS 2017-2021": 34,
+      "solo API 2025 (sin horario en GTFS)": 31
+    }
+  },
+  "rutas_con_mas_paradas": {
+    "P12A": 149,
+    "P27C": 101,
+    "P47C": 99,
+    "P14A": 85,
+    "P47A": 85
+  },
+  "calidad": {
+    "paradas_api_silver": 2107,
+    "paradas_gtfs_silver": 2048,
+    "paradas_en_ambas_fuentes": 1612,
+    "porcentaje_paradas_api_encontradas_en_gtfs": 76.51,
+    "metodo_union": "stop_id (GTFS) = GStopID (API)",
+    "servicios_representativos": {
+      "domingo_festivo": "4612095",
+      "habil": "4612024",
+      "sabado": "4612027"
+    }
+  },
+  "nota": "GTFS con vigencia 2017-2021 y API con vigencia 2025: las diferencias entre fuentes reflejan cambios del sistema, no necesariamente errores."
+}

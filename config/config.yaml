@@ -1,0 +1,68 @@
+# =============================================================
+#  Configuración del ETL MIO Cali
+
+# =============================================================
+
+proyecto:
+  nombre: ETL MIO Cali
+  integrantes: [Jean Paul Tapia Ruiz]
+
+rutas:
+  bronze: data/bronze
+  silver: data/silver
+  gold: data/gold
+  logs: logs
+
+fuentes:
+  # Fuente 1: feed GTFS público del MIO (ZIP con archivos .txt, vigencia 2017-2021)
+  gtfs:
+    url: "https://github.com/ColombiaInfo/ColombiaGTFS/blob/master/Cali%20-%20Mio/GTFS-MIO.zip?raw=1"
+    archivo_local: gtfs_mio_source.zip      # se guarda en bronze; si ya existe no se descarga de nuevo
+    timeout_s: 180
+    chunk_stop_times: 500000                # filas por bloque al leer stop_times.txt (~3 M filas)
+
+  # Fuente 2: API REST ArcGIS del GTFS de Cali (vigencia 2025)
+  api_arcgis:
+    url_base: "https://services9.arcgis.com/8rJ42n9yWry0I4K4/arcgis/rest/services/GTFS/FeatureServer"
+    capa_paradas: 0
+    capa_lineas: 4
+    registros_por_pagina: 2000              # máximo que devuelve el servicio por petición
+    max_paginas: 50                         # protección contra bucles infinitos
+    timeout_s: 60
+
+  # Fuente 3: comunas de Cali (IDESC / Datos Abiertos Cali)
+  comunas:
+    shapefile_zip: comunas_cali_shp.zip     # shapefile oficial descargado (prioridad 1)
+    geojson: comunas_cali.geojson           # GeoJSON local o convertido (prioridad 2)
+    crs_por_defecto: "EPSG:6249"            # MAGNA-SIRGAS Cali, si el archivo viene en metros sin declarar CRS
+    timeout_s: 90
+    urls_descarga:                          # se intentan en orden si no hay archivo local
+      - "https://www.datos.gov.co/api/geospatial/dx2g-2mhm?method=export&format=GeoJSON"
+      - "http://ws-idesc.cali.gov.co:8081/geoserver/idesc/ows?service=WFS&version=1.0.0&request=GetFeature&typeName=idesc:mc_comunas&outputFormat=application/json&srsName=EPSG:4326"
+
+  # Fuente 4 (complementaria): población por comuna (proyecciones de la Alcaldía de Cali).
+  # Se descarga a mano desde datos.cali.gov.co y se guarda en data/bronze con este nombre.
+  # Acepta CSV o Excel, en formato ancho (un año por columna), largo (año y población en filas)
+  # o simple (comuna y población). Si no está, el ETL sigue sin esta variable y lo registra.
+  poblacion:
+    archivo: poblacion_comunas.csv
+    hoja: 0                                 # solo para Excel: nombre o número de hoja
+    anio: auto                              # "auto" = último año que no sea futuro (en la proyección 2018-2027 usa 2026)
+
+accesibilidad:
+  # Análisis de cobertura peatonal: malla de puntos dentro de cada comuna y distancia
+  # a la parada vigente más cercana (paradas de la API 2025).
+  malla_m: 100                              # separación entre puntos de la malla (m)
+  crs_metrico: "EPSG:6249"                  # proyección en metros para medir distancias
+  radios_m: [200, 300, 500]                 # 500 m = radio peatonal estándar; 200/300 = proxy de movilidad reducida
+  radio_principal_m: 500
+
+base_datos:
+  # Base de datos SQLite de salida (la ruta se puede cambiar en .env con DB_PATH)
+  ruta_por_defecto: data/gold/mio_cali.db
+  cargar_silver: true        # además de Gold, carga las tablas Silver
+
+validacion:
+  # Límites aproximados de Cali: coordenadas fuera de este rango se descartan
+  latitud: [3.25, 3.55]
+  longitud: [-76.65, -76.40]

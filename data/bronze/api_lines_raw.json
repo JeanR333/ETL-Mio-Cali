@@ -1,0 +1,794 @@
+{
+  "fields": [
+    {
+      "name": "OBJECTID",
+      "type": "esriFieldTypeOID",
+      "alias": "OBJECTID",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "ID",
+      "type": "esriFieldTypeInteger",
+      "alias": "Identificador",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null,
+      "description": "{\"value\":\"Identificador ID\",\"fieldValueType\":\"uniqueIdentifier\"}"
+    },
+    {
+      "name": "GRouteID",
+      "type": "esriFieldTypeString",
+      "alias": "GRouteID",
+      "sqlType": "sqlTypeOther",
+      "length": 500,
+      "domain": null,
+      "defaultValue": null
+    },
+    {
+      "name": "GRouteType",
+      "type": "esriFieldTypeSmallInteger",
+      "alias": "GRouteType",
+      "sqlType": "sqlTypeOther",
+      "domain": null,
+      "defaultValue": null
+    }
+  ],
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 1,
+        "ID": 1,
+        "GRouteID": "112",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 2,
+        "ID": 2,
+        "GRouteID": "115",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 3,
+        "ID": 3,
+        "GRouteID": "131",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 4,
+        "ID": 4,
+        "GRouteID": "140",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 5,
+        "ID": 5,
+        "GRouteID": "147",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 6,
+        "ID": 6,
+        "GRouteID": "150",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 7,
+        "ID": 7,
+        "GRouteID": "152",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 8,
+        "ID": 8,
+        "GRouteID": "157",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 9,
+        "ID": 9,
+        "GRouteID": "162",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 10,
+        "ID": 10,
+        "GRouteID": "2141",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 11,
+        "ID": 11,
+        "GRouteID": "2211",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 12,
+        "ID": 12,
+        "GRouteID": "2213",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 13,
+        "ID": 13,
+        "GRouteID": "2215",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 14,
+        "ID": 14,
+        "GRouteID": "2242",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 15,
+        "ID": 15,
+        "GRouteID": "2274",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 16,
+        "ID": 16,
+        "GRouteID": "2301",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 17,
+        "ID": 17,
+        "GRouteID": "232",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 18,
+        "ID": 18,
+        "GRouteID": "2401",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 19,
+        "ID": 19,
+        "GRouteID": "2402",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 20,
+        "ID": 20,
+        "GRouteID": "242",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 21,
+        "ID": 21,
+        "GRouteID": "2471",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 22,
+        "ID": 22,
+        "GRouteID": "2472",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 23,
+        "ID": 23,
+        "GRouteID": "2513",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 24,
+        "ID": 24,
+        "GRouteID": "2524",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 25,
+        "ID": 25,
+        "GRouteID": "2602",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 26,
+        "ID": 26,
+        "GRouteID": "2621",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 27,
+        "ID": 27,
+        "GRouteID": "2624",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 28,
+        "ID": 28,
+        "GRouteID": "275",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 29,
+        "ID": 29,
+        "GRouteID": "282",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 30,
+        "ID": 30,
+        "GRouteID": "3011",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 31,
+        "ID": 31,
+        "GRouteID": "3012",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 32,
+        "ID": 32,
+        "GRouteID": "302",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 33,
+        "ID": 33,
+        "GRouteID": "303",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 34,
+        "ID": 34,
+        "GRouteID": "304",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 35,
+        "ID": 35,
+        "GRouteID": "305",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 36,
+        "ID": 36,
+        "GRouteID": "306",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 37,
+        "ID": 37,
+        "GRouteID": "311",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 38,
+        "ID": 38,
+        "GRouteID": "3112",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 39,
+        "ID": 39,
+        "GRouteID": "3121",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 40,
+        "ID": 40,
+        "GRouteID": "3122",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 41,
+        "ID": 41,
+        "GRouteID": "3123",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 42,
+        "ID": 42,
+        "GRouteID": "3124",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 43,
+        "ID": 43,
+        "GRouteID": "3131",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 44,
+        "ID": 44,
+        "GRouteID": "3133",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 45,
+        "ID": 45,
+        "GRouteID": "3134",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 46,
+        "ID": 46,
+        "GRouteID": "3141",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 47,
+        "ID": 47,
+        "GRouteID": "3142",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 48,
+        "ID": 48,
+        "GRouteID": "3172",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 49,
+        "ID": 49,
+        "GRouteID": "3173",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 50,
+        "ID": 50,
+        "GRouteID": "3174",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 51,
+        "ID": 51,
+        "GRouteID": "3175",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 52,
+        "ID": 52,
+        "GRouteID": "3176",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 53,
+        "ID": 53,
+        "GRouteID": "318",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 54,
+        "ID": 54,
+        "GRouteID": "3191",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 55,
+        "ID": 55,
+        "GRouteID": "3192",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 56,
+        "ID": 56,
+        "GRouteID": "321",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 57,
+        "ID": 57,
+        "GRouteID": "322",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 58,
+        "ID": 58,
+        "GRouteID": "323",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 59,
+        "ID": 59,
+        "GRouteID": "332",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 60,
+        "ID": 60,
+        "GRouteID": "333",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 61,
+        "ID": 61,
+        "GRouteID": "3351",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 62,
+        "ID": 62,
+        "GRouteID": "336",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 63,
+        "ID": 63,
+        "GRouteID": "3371",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 64,
+        "ID": 64,
+        "GRouteID": "3372",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 65,
+        "ID": 65,
+        "GRouteID": "3411",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 66,
+        "ID": 66,
+        "GRouteID": "3422",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 67,
+        "ID": 67,
+        "GRouteID": "3441",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 68,
+        "ID": 68,
+        "GRouteID": "3442",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 69,
+        "ID": 69,
+        "GRouteID": "346",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 70,
+        "ID": 70,
+        "GRouteID": "347",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 71,
+        "ID": 71,
+        "GRouteID": "352",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 72,
+        "ID": 72,
+        "GRouteID": "354",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 73,
+        "ID": 73,
+        "GRouteID": "355",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 74,
+        "ID": 74,
+        "GRouteID": "356",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 75,
+        "ID": 75,
+        "GRouteID": "357",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 76,
+        "ID": 76,
+        "GRouteID": "361",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 77,
+        "ID": 77,
+        "GRouteID": "362",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 78,
+        "ID": 78,
+        "GRouteID": "363",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 79,
+        "ID": 79,
+        "GRouteID": "364",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 80,
+        "ID": 80,
+        "GRouteID": "370",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 81,
+        "ID": 81,
+        "GRouteID": "371",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 82,
+        "ID": 82,
+        "GRouteID": "3721",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 83,
+        "ID": 83,
+        "GRouteID": "3722",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 84,
+        "ID": 84,
+        "GRouteID": "373",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 85,
+        "ID": 85,
+        "GRouteID": "375",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 86,
+        "ID": 86,
+        "GRouteID": "3781",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 87,
+        "ID": 87,
+        "GRouteID": "381",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 88,
+        "ID": 88,
+        "GRouteID": "382",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 89,
+        "ID": 89,
+        "GRouteID": "383",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 90,
+        "ID": 90,
+        "GRouteID": "421",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 91,
+        "ID": 91,
+        "GRouteID": "427",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 92,
+        "ID": 92,
+        "GRouteID": "437",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 93,
+        "ID": 93,
+        "GRouteID": "451",
+        "GRouteType": 3
+      }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 94,
+        "ID": 94,
+        "GRouteID": "MIOCABLE",
+        "GRouteType": 6
+      }
+    }
+  ],
+  "paginas": 1,
+  "origen": "api"
+}
